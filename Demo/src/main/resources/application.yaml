@@ -1,0 +1,12 @@
+# 애필레케이션 초기 셋팅
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: admin
+
+  jpa:
+    hibernate:
+      ddl-auto: none # Jpa의 클래스 파일을 기반으로 테이블을 생성해준다. 만약 빌드 시마다 create하려면 create로 지정해주면 됨.
+    show-sql: true
